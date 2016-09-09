@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qbz-b2-CeX" customClass="PagesView">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="177"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7R-Va-5OS">
+                    <rect key="frame" x="0.0" y="0.0" width="371" height="177"/>
+                    <color key="backgroundColor" red="0.53255563969999997" green="1" blue="0.56083742319999996" alpha="1" colorSpace="calibratedRGB"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="UVf-Tw-Ktz">
+                    <rect key="frame" x="312" y="135" width="39" height="37"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="0.77693870109999996" green="0.87880821090000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="UVf-Tw-Ktz" secondAttribute="bottom" constant="5" id="MJL-Hb-VF7"/>
+                <constraint firstAttribute="trailing" secondItem="UVf-Tw-Ktz" secondAttribute="trailing" constant="20" id="YSg-wS-Q6M"/>
+                <constraint firstAttribute="trailing" secondItem="v7R-Va-5OS" secondAttribute="trailing" id="Ys8-PR-mQr"/>
+                <constraint firstItem="v7R-Va-5OS" firstAttribute="leading" secondItem="qbz-b2-CeX" secondAttribute="leading" id="Z44-i1-puM"/>
+                <constraint firstAttribute="bottom" secondItem="v7R-Va-5OS" secondAttribute="bottom" id="mOq-Ha-VUo"/>
+                <constraint firstItem="v7R-Va-5OS" firstAttribute="top" secondItem="qbz-b2-CeX" secondAttribute="top" id="s0E-Ez-PX9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pageControl" destination="UVf-Tw-Ktz" id="YxM-ch-yIX"/>
+                <outlet property="scrollView" destination="v7R-Va-5OS" id="2tH-7Z-NGP"/>
+            </connections>
+            <point key="canvasLocation" x="321.5" y="371.5"/>
+        </view>
+    </objects>
+</document>
